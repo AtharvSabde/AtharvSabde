@@ -2,7 +2,7 @@
 - 👀 I’m interested in data science 
 - 🌱 I’m currently learning python and SQL 
 - 💞️ I’m looking to collaborate on data related projects and frontend projects
-- 📫 How to reach me 1)emailid = atharv.sabde19@gmail.com
+- 📫 How to reach me 1) atharv.sabde19@gmail.com
 - 
 
 <!---
