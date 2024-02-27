@@ -14,7 +14,7 @@ Here are some ideas to get you started: -->
 -   
 - 💬 Ask me about Kaggle, Data Science and Machine Learning
 - 
-- 📫 How to reach me: atharvsabde01@gmail.com
+- 📫 How to reach me: atharv.sabde19@gmail.com
 -
 - Let's connect on Kaggle: https://www.kaggle.com/atharvsabde
 
