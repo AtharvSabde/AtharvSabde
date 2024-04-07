@@ -11,7 +11,7 @@
 
 <!-- --> 
 <p align="center">
-  <a href="atharv.sabde19@gmail.com"><img img src="https://img.icons8.com/?size=48&id=qyRpAggnV0zH&format=png" alt="Gmail" title="gmail" width="50px"/></a>
+  <a href="mailto:atharv.sabde19@gmail.com"><img img src="https://img.icons8.com/?size=48&id=qyRpAggnV0zH&format=png" alt="Gmail" title="gmail" width="50px"/></a>
 	<a href="https://www.linkedin.com/in/atharv-sabde-4aa272222/"><img src="https://img.icons8.com/?size=48&id=13930&format=png" alt="LinkedIn" width="50px" title="linkedin"/></a>
 	<a href="https://twitter.com/atharv_sabde"><img src="https://img.icons8.com/?size=48&id=13963&format=png" alt="Twitter" title="Twitter" width="50px"/></a>
 
