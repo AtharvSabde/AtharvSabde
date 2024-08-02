@@ -42,6 +42,8 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" height="25" alt="tensorflow logo"  />
   <img width="1" />  
   <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" height="25" alt="pytorch logo"  />
+  <img width="1" />  
+  <img src="https://brandfetch.com/llamaindex.ai?library=default&collection=logos&asset=idcsDhWsl4&view=overview" height="25" alt="llamaindex logo"  />
   <img width="1" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" height="25" alt="opencv logo"  />
   <img width="1" />
