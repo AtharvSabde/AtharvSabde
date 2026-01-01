@@ -2,7 +2,7 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Atharv%20Sabde&fontSize=50&animation=twinkling&fontAlignY=35)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=AI+Engineer+%7C+ML+Enthusiast+%F0%9F%A4%96;Data+Scientist+%7C+Kaggle+2x+Expert+%F0%9F%8F%86;Where+Data+Meets+Intelligence+%F0%9F%A7%A0%E2%9A%A1)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=AI+Engineer+%7C+ML+Enthusiast+%F0%9F%A4%96;Data+Scientist+%7C+Kaggle+2x+Expert+%F0%9F%8F%86;Making+Machines+Think%2C+One+Epoch+at+a+Time;Where+Data+Meets+Intelligence+%F0%9F%A7%A0%E2%9A%A1)](https://git.io/typing-svg)
 
 </div>
 
@@ -18,7 +18,7 @@ class Atharv:
     def current_focus(self):
         return {
             "🔥 Hot Topics": ["RAG Systems", "LLM Fine-tuning", "AI Agents"],
-            "💼 Work": ["GenAI", "Computer Vision", "AI research"],
+            "💼 Work": ["GenAI for Fintech", "Computer Vision", "NLP"],
             "📚 Learning": ["MLOps", "Production AI", "Advanced LLMs"],
             "🎯 Goal": "Ship AI products that actually solve real problems"
         }
@@ -30,6 +30,7 @@ class Atharv:
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:atharv.sabde19@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/atharv-sabde-4aa272222/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/atharv_sabde)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/atharvsabde)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://atharvsabdeportfoliov1.vercel.app/)
 
@@ -82,17 +83,27 @@ Built prediction models for movies, sales, and survival analysis → hands-on ML
 
 ---
 
-## 📊 GitHub Stats
+## 📌 Pinned Projects
 
-<div align="center">
+### 🔒 [RedactAI](https://github.com/AtharvSabde/RedactAI)
+Intelligent document redaction with automated PII detection MCP Server  
+`Python`  `Ollama` `MCP`
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=AtharvSabde&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF)
+### 🌾 [Cropverse](https://github.com/AtharvSabde/Cropverse)
+Agricultural intelligence platform → crop prediction and yield forecasting  
+`Python` `ML` `AgriTech` `IoT`
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=AtharvSabde&show_icons=true&locale=en&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D9FF)
+### 🧠 [Cognitive Stress Detection](https://github.com/AtharvSabde/Cognitive-Stress-Detection-System)
+Voice-based cognitive stress detection using audio features and ML → early impairment indicators  
+`Python` `ML` `Gemini AI` `Audio Processing`
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=AtharvSabde&theme=radical&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF)
+### 🤖 [X Automation AI](https://github.com/AtharvSabde/X_automation)
+AI system that mimics any Twitter user's writing style → scrapes tweets, analyzes patterns, generates posts  
+`Python` `Agno` `NLP` `Web Scraping`
 
-</div>
+**[→ View all repositories](https://github.com/AtharvSabde?tab=repositories)**
+
+---
 
 ---
 
@@ -101,10 +112,6 @@ Built prediction models for movies, sales, and survival analysis → hands-on ML
 ### 💭 Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 🐍 Contribution Graph
-
-![](https://github-readme-activity-graph.vercel.app/graph?username=AtharvSabde&theme=react-dark&hide_border=true&area=true)
 
 ---
 
