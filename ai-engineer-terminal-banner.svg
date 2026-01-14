@@ -1,0 +1,251 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="terminalSVG" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <!-- Gradient definitions -->
+                <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#0a0e14;stop-opacity:1"/>
+                    <stop offset="100%" style="stop-color:#1a1f2e;stop-opacity:1"/>
+                </linearGradient>
+                
+                <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1"/>
+                    <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1"/>
+                </linearGradient>
+
+                <!-- Glow filter -->
+                <filter id="glow">
+                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+                <!-- Animations -->
+                <style>
+                    @keyframes blink {
+                        0%, 50% { opacity: 1; }
+                        51%, 100% { opacity: 0; }
+                    }
+                    @keyframes pulse {
+                        0%, 100% { opacity: 0.6; }
+                        50% { opacity: 1; }
+                    }
+                    @keyframes dataFlow {
+                        0% { stroke-dashoffset: 1000; }
+                        100% { stroke-dashoffset: 0; }
+                    }
+                    @keyframes slideIn {
+                        from { transform: translateX(-20px); opacity: 0; }
+                        to { transform: translateX(0); opacity: 1; }
+                    }
+                    .cursor { animation: blink 1s infinite; }
+                    .pulse { animation: pulse 2s ease-in-out infinite; }
+                    .data-flow { 
+                        animation: dataFlow 3s linear infinite;
+                        stroke-dasharray: 5, 5;
+                    }
+                    .slide-in { animation: slideIn 0.6s ease-out forwards; }
+                    
+                    .terminal-text {
+                        font-family: 'Courier New', monospace;
+                        font-size: 14px;
+                        fill: #00d9ff;
+                    }
+                    .code-text {
+                        font-family: 'Courier New', monospace;
+                        font-size: 13px;
+                    }
+                </style>
+            </defs>
+
+            <!-- Background -->
+            <rect width="1200" height="700" fill="url(#bgGrad)"/>
+            
+            <!-- Terminal window -->
+            <rect x="20" y="20" width="1160" height="660" fill="#0d1117" stroke="url(#accentGrad)" stroke-width="3" rx="8"/>
+            
+            <!-- Terminal header -->
+            <rect x="20" y="20" width="1160" height="40" fill="#161b22" rx="8"/>
+            <circle cx="45" cy="40" r="7" fill="#ff5f56"/>
+            <circle cx="70" cy="40" r="7" fill="#ffbd2e"/>
+            <circle cx="95" cy="40" r="7" fill="#27c93f"/>
+            <text x="120" y="45" font-family="monospace" font-size="14" fill="#00d9ff">atharv@ai-terminal ~ ./deploy_intelligence.sh</text>
+
+            <!-- Left side: Neural Network Visualization -->
+            <g>
+                <!-- Input Layer (3 nodes) -->
+                <text x="60" y="95" font-family="monospace" font-size="11" fill="#888">Input</text>
+                <circle cx="80" cy="120" r="8" fill="#0d1117" stroke="#00d9ff" stroke-width="2" class="pulse"/>
+                <text x="68" y="125" font-family="monospace" font-size="9" fill="#00d9ff">AI</text>
+                
+                <circle cx="80" cy="170" r="8" fill="#0d1117" stroke="#00d9ff" stroke-width="2" class="pulse"/>
+                <text x="66" y="175" font-family="monospace" font-size="9" fill="#00d9ff">ML</text>
+                
+                <circle cx="80" cy="220" r="8" fill="#0d1117" stroke="#00d9ff" stroke-width="2" class="pulse"/>
+                <text x="63" y="225" font-family="monospace" font-size="9" fill="#00d9ff">Data</text>
+
+                <!-- Hidden Layer 1 (4 nodes) -->
+                <text x="155" y="85" font-family="monospace" font-size="11" fill="#888">Processing</text>
+                <circle cx="180" cy="110" r="8" fill="#0d1117" stroke="#00ff88" stroke-width="2" class="pulse"/>
+                <text x="168" y="115" font-family="monospace" font-size="8" fill="#00ff88">RAG</text>
+                
+                <circle cx="180" cy="150" r="8" fill="#0d1117" stroke="#00ff88" stroke-width="2" class="pulse"/>
+                <text x="168" y="155" font-family="monospace" font-size="8" fill="#00ff88">LLM</text>
+                
+                <circle cx="180" cy="190" r="8" fill="#0d1117" stroke="#00ff88" stroke-width="2" class="pulse"/>
+                <text x="172" y="195" font-family="monospace" font-size="8" fill="#00ff88">CV</text>
+                
+                <circle cx="180" cy="230" r="8" fill="#0d1117" stroke="#00ff88" stroke-width="2" class="pulse"/>
+                <text x="168" y="235" font-family="monospace" font-size="8" fill="#00ff88">NLP</text>
+
+                <!-- Hidden Layer 2 (3 nodes) -->
+                <text x="255" y="95" font-family="monospace" font-size="11" fill="#888">Training</text>
+                <circle cx="280" cy="130" r="8" fill="#0d1117" stroke="#ffbd2e" stroke-width="2" class="pulse"/>
+                <text x="263" y="135" font-family="monospace" font-size="8" fill="#ffbd2e">Fine</text>
+                <text x="263" y="143" font-family="monospace" font-size="8" fill="#ffbd2e">Tune</text>
+                
+                <circle cx="280" cy="170" r="8" fill="#0d1117" stroke="#ffbd2e" stroke-width="2" class="pulse"/>
+                <text x="266" y="175" font-family="monospace" font-size="8" fill="#ffbd2e">MLOps</text>
+                
+                <circle cx="280" cy="210" r="8" fill="#0d1117" stroke="#ffbd2e" stroke-width="2" class="pulse"/>
+                <text x="268" y="215" font-family="monospace" font-size="8" fill="#ffbd2e">Agent</text>
+
+                <!-- Output Layer (1 node) -->
+                <text x="355" y="115" font-family="monospace" font-size="11" fill="#888">Deploy</text>
+                <circle cx="380" cy="170" r="12" fill="#0d1117" stroke="#ff5f56" stroke-width="3" class="pulse" filter="url(#glow)"/>
+                <text x="370" y="177" font-family="monospace" font-size="10" fill="#ff5f56" font-weight="bold">🚀</text>
+
+                <!-- Connection lines (animated data flow) -->
+                <!-- Input to Hidden 1 -->
+                <line x1="88" y1="120" x2="172" y2="110" stroke="#00d9ff" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                <line x1="88" y1="120" x2="172" y2="150" stroke="#00d9ff" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                <line x1="88" y1="170" x2="172" y2="150" stroke="#00d9ff" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                <line x1="88" y1="170" x2="172" y2="190" stroke="#00d9ff" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                <line x1="88" y1="220" x2="172" y2="190" stroke="#00d9ff" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                <line x1="88" y1="220" x2="172" y2="230" stroke="#00d9ff" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                
+                <!-- Hidden 1 to Hidden 2 -->
+                <line x1="188" y1="110" x2="272" y2="130" stroke="#00ff88" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                <line x1="188" y1="150" x2="272" y2="170" stroke="#00ff88" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                <line x1="188" y1="190" x2="272" y2="170" stroke="#00ff88" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                <line x1="188" y1="230" x2="272" y2="210" stroke="#00ff88" stroke-width="1.5" opacity="0.6" class="data-flow"/>
+                
+                <!-- Hidden 2 to Output -->
+                <line x1="288" y1="130" x2="368" y2="165" stroke="#ffbd2e" stroke-width="2" opacity="0.7" class="data-flow"/>
+                <line x1="288" y1="170" x2="368" y2="170" stroke="#ffbd2e" stroke-width="2" opacity="0.7" class="data-flow"/>
+                <line x1="288" y1="210" x2="368" y2="175" stroke="#ffbd2e" stroke-width="2" opacity="0.7" class="data-flow"/>
+
+                <!-- Network labels -->
+                <text x="60" y="260" font-family="monospace" font-size="10" fill="#888" font-style="italic">Making Machines Think</text>
+            </g>
+
+            <!-- Right side: Terminal Code Execution -->
+            <text class="code-text slide-in" x="450" y="100">
+                <tspan x="450" dy="0" fill="#00d9ff" font-weight="bold" font-size="15">$ ./atharv --info</tspan>
+                <tspan x="450" dy="25" fill="#888">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</tspan>
+                
+                <tspan x="450" dy="28" fill="#fff">  </tspan><tspan fill="#00ff88" font-weight="bold">Atharv Sabde</tspan>
+                <tspan x="450" dy="20" fill="#fff">  📍 Pune, India 🇮🇳</tspan>
+                <tspan x="450" dy="20" fill="#fff">  🎓 BE in AI &amp; ML (Graduating 2026)</tspan>
+                <tspan x="450" dy="20" fill="#fff">  💼 AI Engineer | Data Scientist</tspan>
+                
+                <tspan x="450" dy="28" fill="#888">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</tspan>
+                
+                <tspan x="450" dy="25" fill="#00d9ff" font-weight="bold">$ ./achievements --list</tspan>
+                <tspan x="450" dy="22" fill="#ffbd2e">  🏆 Kaggle 2x Expert</tspan>
+                <tspan x="450" dy="20" fill="#ffbd2e">  💼 4 Internships (DevDynamics, Nirmata++)</tspan>
+                <tspan x="450" dy="20" fill="#ffbd2e">  🚀 GenAI Production Systems</tspan>
+                <tspan x="450" dy="20" fill="#ffbd2e">  🎯 AI Evaluation Pipelines</tspan>
+                
+                <tspan x="450" dy="28" fill="#888">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</tspan>
+                
+                <tspan x="450" dy="25" fill="#00d9ff" font-weight="bold">$ ./projects --featured</tspan>
+                <tspan x="450" dy="22" fill="#fff">  🔒 </tspan><tspan fill="#00ff88">RedactAI</tspan><tspan fill="#888"> - PII Detection MCP Server</tspan>
+                <tspan x="450" dy="20" fill="#fff">  🌾 </tspan><tspan fill="#00ff88">Cropverse</tspan><tspan fill="#888"> - AgriTech Intelligence</tspan>
+                <tspan x="450" dy="20" fill="#fff">  🧠 </tspan><tspan fill="#00ff88">Cognitive Stress</tspan><tspan fill="#888"> - Voice ML</tspan>
+                <tspan x="450" dy="20" fill="#fff">  🤖 </tspan><tspan fill="#00ff88">X Automation AI</tspan><tspan fill="#888"> - Style Mimic</tspan>
+                
+                <tspan x="450" dy="28" fill="#888">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</tspan>
+                
+                <tspan x="450" dy="25" fill="#00d9ff" font-weight="bold">$ ./stack --current</tspan>
+                <tspan x="450" dy="22" fill="#fff">  🔥 Hot: </tspan><tspan fill="#00ff88">RAG, LLM Fine-tuning, AI Agents</tspan>
+                <tspan x="450" dy="20" fill="#fff">  💻 Work: </tspan><tspan fill="#00ff88">GenAI Fintech, CV, NLP</tspan>
+                <tspan x="450" dy="20" fill="#fff">  📚 Learn: </tspan><tspan fill="#00ff88">MLOps, Production AI</tspan>
+                
+                <tspan x="450" dy="28" fill="#888">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</tspan>
+                
+                <tspan x="450" dy="25" fill="#ff5f56" font-weight="bold">Mission:</tspan>
+                <tspan x="450" dy="22" fill="#00d9ff" font-style="italic">"Helping Machines transform the world,</tspan>
+                <tspan x="450" dy="20" fill="#00d9ff" font-style="italic"> Epoch by Epoch"</tspan>
+            </text>
+
+            <!-- Tech Stack Pills -->
+            <g transform="translate(50, 300)">
+                <text x="0" y="0" font-family="monospace" font-size="12" fill="#00ff88" font-weight="bold">Tech Arsenal:</text>
+                
+                <!-- Row 1 -->
+                <rect x="0" y="10" width="80" height="24" rx="12" fill="#1a1f2e" stroke="#00d9ff" stroke-width="1"/>
+                <text x="40" y="27" font-family="monospace" font-size="10" fill="#00d9ff" text-anchor="middle">PyTorch</text>
+                
+                <rect x="90" y="10" width="80" height="24" rx="12" fill="#1a1f2e" stroke="#00ff88" stroke-width="1"/>
+                <text x="130" y="27" font-family="monospace" font-size="10" fill="#00ff88" text-anchor="middle">LangChain</text>
+                
+                <rect x="180" y="10" width="90" height="24" rx="12" fill="#1a1f2e" stroke="#ffbd2e" stroke-width="1"/>
+                <text x="225" y="27" font-family="monospace" font-size="10" fill="#ffbd2e" text-anchor="middle">HuggingFace</text>
+                
+                <rect x="280" y="10" width="70" height="24" rx="12" fill="#1a1f2e" stroke="#00d9ff" stroke-width="1"/>
+                <text x="315" y="27" font-family="monospace" font-size="10" fill="#00d9ff" text-anchor="middle">Ollama</text>
+                
+                <!-- Row 2 -->
+                <rect x="0" y="42" width="70" height="24" rx="12" fill="#1a1f2e" stroke="#ff5f56" stroke-width="1"/>
+                <text x="35" y="59" font-family="monospace" font-size="10" fill="#ff5f56" text-anchor="middle">OpenCV</text>
+                
+                <rect x="80" y="42" width="60" height="24" rx="12" fill="#1a1f2e" stroke="#00ff88" stroke-width="1"/>
+                <text x="110" y="59" font-family="monospace" font-size="10" fill="#00ff88" text-anchor="middle">Flask</text>
+                
+                <rect x="150" y="42" width="80" height="24" rx="12" fill="#1a1f2e" stroke="#ffbd2e" stroke-width="1"/>
+                <text x="190" y="59" font-family="monospace" font-size="10" fill="#ffbd2e" text-anchor="middle">Pandas</text>
+                
+                <rect x="240" y="42" width="55" height="24" rx="12" fill="#1a1f2e" stroke="#00d9ff" stroke-width="1"/>
+                <text x="267" y="59" font-family="monospace" font-size="10" fill="#00d9ff" text-anchor="middle">AWS</text>
+                
+                <rect x="305" y="42" width="60" height="24" rx="12" fill="#1a1f2e" stroke="#00ff88" stroke-width="1"/>
+                <text x="335" y="59" font-family="monospace" font-size="10" fill="#00ff88" text-anchor="middle">MySQL</text>
+            </g>
+
+            <!-- Experience Timeline -->
+            <g transform="translate(50, 420)">
+                <text x="0" y="0" font-family="monospace" font-size="12" fill="#00ff88" font-weight="bold">Recent Experience:</text>
+                
+                <!-- Timeline line -->
+                <line x1="5" y1="20" x2="5" y2="140" stroke="#00d9ff" stroke-width="2"/>
+                
+                <!-- DevDynamics -->
+                <circle cx="5" cy="30" r="5" fill="#00d9ff" class="pulse"/>
+                <text x="20" y="25" font-family="monospace" font-size="11" fill="#00d9ff" font-weight="bold">DevDynamics</text>
+                <text x="20" y="40" font-family="monospace" font-size="10" fill="#888">AI Evaluation + FutureAGI</text>
+                
+                <!-- The Nirmata -->
+                <circle cx="5" cy="70" r="5" fill="#00ff88" class="pulse"/>
+                <text x="20" y="65" font-family="monospace" font-size="11" fill="#00ff88" font-weight="bold">The Nirmata</text>
+                <text x="20" y="80" font-family="monospace" font-size="10" fill="#888">GenAI Fintech (OCR, AWS)</text>
+                
+                <!-- Pixel Stitch -->
+                <circle cx="5" cy="110" r="5" fill="#ffbd2e" class="pulse"/>
+                <text x="20" y="105" font-family="monospace" font-size="11" fill="#ffbd2e" font-weight="bold">Pixel Stitch</text>
+                <text x="20" y="120" font-family="monospace" font-size="10" fill="#888">Text-to-Image + LoRA</text>
+            </g>
+
+            <!-- Command prompt -->
+            <text class="terminal-text" x="50" y="650">
+                <tspan fill="#00d9ff">atharv@github</tspan>
+                <tspan fill="#fff">:</tspan>
+                <tspan fill="#00ff88">~/building-the-future</tspan>
+                <tspan fill="#fff">$ git push origin main </tspan>
+                <tspan class="cursor" fill="#00d9ff">█</tspan>
+            </text>
+
+            <!-- Footer glow line -->
+            <line x1="50" y1="630" x2="1150" y2="630" stroke="url(#accentGrad)" stroke-width="2" opacity="0.5" filter="url(#glow)"/>
+        </svg>
