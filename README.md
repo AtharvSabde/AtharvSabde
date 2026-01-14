@@ -1,5 +1,13 @@
 <div align="center">
 
+![AI Engineer Terminal](./ai-engineer-terminal-banner.svg)
+
+</div>
+
+
+
+<div align="center">
+
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Atharv%20Sabde&fontSize=50&animation=twinkling&fontAlignY=35)
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=AI+Engineer+%7C+ML+Enthusiast+%F0%9F%A4%96;Data+Scientist+%7C+Kaggle+2x+Expert+%F0%9F%8F%86;Making+Machines+Think%2C+One+Epoch+at+a+Time;Where+Data+Meets+Intelligence+%F0%9F%A7%A0%E2%9A%A1)](https://git.io/typing-svg)
