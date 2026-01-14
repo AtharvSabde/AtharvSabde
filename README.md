@@ -6,7 +6,7 @@
 
 
 
-<div align="center">
+<!-- <div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Atharv%20Sabde&fontSize=50&animation=twinkling&fontAlignY=35)
 
@@ -32,7 +32,7 @@ class Atharv:
         }
 ```
 
-<div align="center">
+<div align="center"> -->
 
 ## 📫 Let's Connect
 
