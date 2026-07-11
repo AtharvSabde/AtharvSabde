@@ -17,10 +17,10 @@
 ```python
 class Atharv:
     def __init__(self):
-        self.location = "Pune, India 🇮🇳"
-        self.role = "AI Engineer | Data Scientist"
-        self.education = "BE in AI & ML (Graduating 2026)"
-        self.achievements = ["Kaggle 2x Expert 🏆", "4 Internships Completed"]
+        self.location = "Bengaluru, India 🇮🇳"
+        self.role = "SDE-1 AIML | AI Engineer"
+        self.education = "BE in AI & ML (Graduated 2026)"
+        self.achievements = ["Kaggle 2x Expert 🏆", "Shipping production AI"]
         self.motto = "Helping Machines transform the world, Epoch by Epoch"
         
     def current_focus(self):
@@ -76,6 +76,9 @@ class Atharv:
 ---
 
 ## 💼 Experience Highlights
+
+**🛂 StampMyVisa** (SDE-1 AIML · Full-time)  
+Building and shipping production AI/ML systems → LLM-powered automations, retrieval pipelines, and intelligent document processing that power visa workflows at scale
 
 **🚀 DevDynamics** (AIML Developer Intern)  
 Built AI evaluation pipelines with FutureAGI → improved code review quality and developer productivity
